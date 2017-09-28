@@ -21,6 +21,9 @@ class AlwaysSpawn extends PluginBase implements Listener{
           }
           public function onDisable(){
                     $this->getLogger()->info("Plugin Disabled");
-
+	  }
+	  public function onPlayerRespawn(PlayerRespawnEvent $event){
+    		    $player->setLevel($level);
+    	            $level = $this->getServer()->getDefaultLevel();
 	}
 }
