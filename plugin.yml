@@ -1,9 +1,5 @@
 name: AlwaysSpawn
-main: AlwaysSpawn\Main
-version: 3.0.0
+author: QuiverlyRivalry
 api: [3.0.0-ALPHA7, 3.0.0-ALPHA8]
-
-load: POSTWORLD
-authors: [QuiverlyRivalry]
-description: Die or join, same place.
-website: https://github.com/QuiverlyRivalry/AlwaysSpawn
+version: 1.0
+main: AlwaysSpawn/spawn
