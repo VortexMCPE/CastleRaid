@@ -2,7 +2,7 @@
 
 namespace AlwaysSpawn;
 
-use pocketmine\event\player\PlayerDeathEvent;
+use pocketmine\event\player\PlayerRespawnEvent;
 
 use pocketmine\Player;
 
