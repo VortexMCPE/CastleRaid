@@ -2,16 +2,25 @@
 
 namespace AlwaysSpawn;
 
-use pocketmine\plugin\PluginBase;
+use pocketmine\event\player\PlayerDeathEvent;
 
-class AlwaysSpawn extends PluginBase{
+use pocketmine\Player;
+
+use pocketmine\Server;
+
+use pocketmine\event\Listener;
+
+class AlwaysSpawn extends PluginBase implements Listener{
 
           public function onLoad(){
-                    $this->getLogger()->info("Boiii we loading!");
+                    $this->getLogger()->info("Plugin Loading");
           }
           public function onEnable(){
-                    $this->getLogger()->info("Boiiii we loaded!");
+                    $this->getServer()->getPluginManager()->registerEvents($this,$this);
+		    $this->getLogger()->info("Enabled Plugin");
           }
           public function onDisable(){
-                    $this->getLogger()->info("Why you disable meh!");
-          }
+                    $this->getLogger()->info("Plugin Disabled");
+
+	}
+}
