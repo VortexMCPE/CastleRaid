@@ -1,29 +1,28 @@
-
 <?php
 
-namespace AlwaysSpawn;
+namespace DIErespawnCR;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-use pocketmine\event\player\PlayerLoginEvent;
+use pocketmine\event\player\PlayerRespawnEvent;
+use pocketmine\math\Vector3;
 
-class Loader extends Plugin implements Listener{
+class Loader extends PluginBase implements Listener{
   
+  public function onEnable(){
+    $this->getServer()->getPluginManager()->registerEvents($this, $this);
+    $this->getServer()->getLogger()->info("DIErespawnCR Enabled!");
+    }
   
-          public function onLoad(){
-                    $this->getLogger()->info("Plugin Loading");
-          }
-          public function onEnable(){
-                    $this->getLogger()->info("Enabled Plugin");
-          }
-          public function onDisable(){
-                    $this->getLogger()->info("Plugin Disabled");
-          }
+  public function onDisable(){
+    $this->getServer()->getLogger()->info("DIErespawnCR Disabled!");
+    }
   
-  public function onPlayerLogin(PlayerLoginEvent $event){
+  public function onPlayerLogin(PlayerRespawnEvent $event){
     $player = $event->getPlayer();
     $x = $this->getServer()->getDefaultLevel()->getSafeSpawn()->getX();
     $y = $this->getServer()->getDefaultLevel()->getSafeSpawn()->getY();
     $z = $this->getServer()->getDefaultLevel()->getSafeSpawn()->getZ();
     $player->setLevel($level);
+    $player->teleport(new Vector3($x, $y, $z));
     }
   }
