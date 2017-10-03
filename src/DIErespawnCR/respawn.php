@@ -16,7 +16,7 @@ class Loader extends PluginBase implements Listener{
     $this->getServer()->getLogger()->info("DIErespawnCR Disabled!");
     }
   
-  public function onPlayerLogin(PlayerRespawnEvent $event){
+  public function onPlayerRespawn(PlayerRespawnEvent $event){
     $player = $event->getPlayer();
     $x = $this->getServer()->getDefaultLevel()->getSafeSpawn()->getX();
     $y = $this->getServer()->getDefaultLevel()->getSafeSpawn()->getY();
