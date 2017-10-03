@@ -1,5 +1,6 @@
 name: DIErespawnCR
 author: QuiverlyRivalry
 api: [3.0.0-ALPHA7, 3.0.0-ALPHA8]
-version: 1.0
+version: 0.1
 main: DIErespawnCR/respawn
+load: STARTUP
