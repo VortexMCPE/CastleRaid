@@ -5,7 +5,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerRespawnEvent;
 use pocketmine\math\Vector3;
-class Loader extends PluginBase implements Listener{
+class respawn extends PluginBase implements Listener{
   
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
