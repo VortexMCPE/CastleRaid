@@ -2,5 +2,5 @@ name: DIErespawnCR
 author: QuiverlyRivalry
 api: [3.0.0-ALPHA7, 3.0.0-ALPHA8]
 version: 0.1
-main: Loader/Loader
+main: DIErespawnCR\Mainload
 load: STARTUP
