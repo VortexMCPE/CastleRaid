@@ -19,6 +19,6 @@ class Main extends PluginBase implements Listener{
  
     public function onSpawn(PlayerJoinEvent $event){
         $player = $event->getPlayer();
-        $player->teleport($this->level->getSpawn());
+        $player->teleport($player->getLevel()->getSafeSpawn());
     }
 }
