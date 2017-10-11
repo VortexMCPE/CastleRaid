@@ -17,7 +17,7 @@ class Main extends PluginBase implements Listener{
         $this->getServer()->getLogger()->info("DIErespawnCR Disabled!");
     }
  
-    public function onSpawn(PlayerRespawnEvent $event){
+    public function onRespawn(PlayerRespawnEvent $event){
         $player = $event->getPlayer();
         $player->teleport($player->getLevel()->getSafeSpawn());
     }
