@@ -20,5 +20,6 @@ public $playername;
 			$player->addTitle("§aCastle§l§2Raid, "§7Welcome!", -1, 5*20, 30);
 		}
 	}
+}
 
 
