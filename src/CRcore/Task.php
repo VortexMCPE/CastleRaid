@@ -3,6 +3,7 @@
 namespace CRcore;
 
 use pocketmine\scheduler\PluginTask;
+use pocketmine\Player;
 use CRcore\Main;
 
 class Task extends PluginTask{
