@@ -3,7 +3,7 @@
 namespace CRcore;
 
 use pocketmine\scheduler\PluginTask;
-use Narwhal\Main;
+use CRcore\Main;
 
 class Task extends PluginTask{
 
