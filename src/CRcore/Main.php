@@ -4,15 +4,16 @@ namespace DIErespawnCR;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-use pocketmine\event\player\PlayerRespawnEvent;
 use pocketmine\math\Vector3;
 use pocketmine\scheduler\Scheduler;
-use pocketmine\event\player\PlayerJoinEvent;
 
-class Main extends PluginBase implements Listener {
+use CRcore\auth\Auth;
+use CRcore\listener\EventListener;
+
+class Main extends PluginBase {
     
     public function onEnable() {
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+        $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         $this->getServer()->getLogger()->info("DIErespawnCR Enabled!");
     }
     public function onDisable() {
