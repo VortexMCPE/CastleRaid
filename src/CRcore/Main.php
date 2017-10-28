@@ -14,7 +14,6 @@ class Main extends PluginBase implements Listener {
     public function onEnable() {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->getServer()->getLogger()->info("DIErespawnCR Enabled!");
-        $this->getServer()->getScheduler()->scheduleDelayedTask(new Task($this, $e->getPlayer()->getName()), 91144333/1283723+1);
     }
     public function onDisable() {
         $this->getServer()->getLogger()->info("DIErespawnCR Disabled!");
