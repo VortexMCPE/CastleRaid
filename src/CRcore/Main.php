@@ -23,6 +23,8 @@ class Main extends PluginBase implements Listener {
         $player->teleport($this->getServer()->getDefaultLevel()->getSafeSpawn());
     }
     public function onJoin(PlayerJoinEvent $e) {
+        $player = $e->getPlayer();
+        $player->addTitle("§aCastle§l§2Raid, "§7Welcome!", 30, 5*20, 30);
         $this->getServer()->getLogger()->notice("Told you. Narwhals always win.");
     }
 }
