@@ -61,9 +61,6 @@ use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\tile\Tile;
 use pocketmine\block\Block;
 class Main extends PluginBase implements Listener{
-//  This Plugin was Created by EpicSteve33                          \\
-//  This Plugin was Created to Help add more to KingdomCraft        \\
-//  This Plugin was not made for any other server then KingdomCraft  \\
  
    private $maxcaps;
    public $interval = 10;
