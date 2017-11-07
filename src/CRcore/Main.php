@@ -1,5 +1,5 @@
 <?php
-namespace KingdomCore;
+namespace CastleRaid;
 use pocketmine\Player;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerRespawnEvent;
