@@ -177,7 +177,7 @@ class Main extends PluginBase implements Listener{
 	public function onPacketReceived(DataPacketReceiveEvent $event){
 		$pk = $event->getPacket();
 		$player = $event->getPlayer();
-		if($pk instanceof InventoryTransactionPacket and ($pk->trData->actionType === InventoryTransactionPacket::USE_ITEM_ACTION_CLICK_AIR or $pk->trData->actionType === InventoryTransactionPacket::USE_ITEM_ACTION_CLICK_BLOCK)){ //TODO
+		if($pk instanceof InventoryTransactionPacket and ($pk->trData->actionType === InventoryTransactionPacket::USE_ITEM_ACTION_CLICK_AIR or $pk->trData->actionType === InventoryTransactionPacket::USE_ITEM_ACTION_CLICK_BLOCK)){
 			$item = $player->getInventory()->getItemInHand();
 			if($item->getId() == $this->yml["item1"] and $player->getLevel()->getName() == "hub"){
 				$player->teleport(Server::getInstance()->getLevelByName("PVP")->getSafeSpawn());
