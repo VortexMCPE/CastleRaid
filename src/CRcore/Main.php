@@ -60,6 +60,7 @@ class Main extends PluginBase implements Listener{
 			$this->getServer()->loadLevel("BreezeIsland");
 			$this->getLogger()->info("§cDev Mode Loaded!");
 		}
+		new EventListener($this);
 	}
 
 	public function loadConfig(){
@@ -84,7 +85,10 @@ class Main extends PluginBase implements Listener{
 		$player->getInventory()->setItem(2, Item::get(264, 0, 1));
 		$player->getInventory()->setItem(3, Item::get(265, 0, 1));
 		$player->getInventory()->setItem(4, Item::get(406, 0, 1));
-		$player->getInventory()->setHotbarSlotIndex(1, 2, 3, 4); //TODO
+		$player->getInventory()->equipItem(1);
+		$player->getInventory()->equipItem(2);
+		$player->getInventory()->equipItem(3);
+		$player->getInventory()->equipItem(4);
 	}
 
 	public function onJoin(PlayerJoinEvent $event){
@@ -98,7 +102,10 @@ class Main extends PluginBase implements Listener{
 		$player->getInventory()->setItem(2, Item::get(264, 0, 1));
 		$player->getInventory()->setItem(3, Item::get(265, 0, 1));
 		$player->getInventory()->setItem(4, Item::get(406, 0, 1));
-		$player->getInventory()->setHotbarSlotIndex(1, 2, 3, 4);//TODO
+		$player->getInventory()->equipItem(1);
+		$player->getInventory()->equipItem(2);
+		$player->getInventory()->equipItem(3);
+		$player->getInventory()->equipItem(4);
 		$event->getPlayer()->teleport(Server::getInstance()->getLevelByName("hub")->getSafeSpawn());
 		$rank = "Basic";
 		$level = $this->getServer()->getDefaultLevel();
@@ -193,7 +200,10 @@ class Main extends PluginBase implements Listener{
 				$player->getInventory()->setItem(2, Item::get(264, 0, 1));
 				$player->getInventory()->setItem(3, Item::get(265, 0, 1));
 				$player->getInventory()->setItem(4, Item::get(406, 0, 1));
-				$player->getInventory()->setHotbarSlotIndex(1, 2, 3, 4);//TODO
+				$player->getInventory()->equipItem(1);
+				$player->getInventory()->equipItem(2);
+				$player->getInventory()->equipItem(3);
+				$player->getInventory()->equipItem(4);
 			}
 		}
 	}
@@ -271,7 +281,10 @@ class Main extends PluginBase implements Listener{
 			$player->getInventory()->setItem(2, Item::get(264, 0, 1));
 			$player->getInventory()->setItem(3, Item::get(265, 0, 1));
 			$player->getInventory()->setItem(4, Item::get(406, 0, 1));
-			$player->getInventory()->setHotbarSlotIndex(1, 2, 3, 4);//TODO
+			$player->getInventory()->equipItem(1);
+			$player->getInventory()->equipItem(2);
+			$player->getInventory()->equipItem(3);
+			$player->getInventory()->equipItem(4);
 			$event->setCancelled();
 		}
 	}
@@ -428,7 +441,11 @@ class Main extends PluginBase implements Listener{
 					$player->getInventory()->setBoots(Item::get(305, 0, 1));
 					$player->getInventory()->sendArmorContents($player);
 					$player->teleport(new Vector3(1719, 9, -1027));
-					$player->getInventory()->setHotbarSlotIndex(0, 1, 2, 3, 4);// TODO
+					$player->getInventory()->equipItem(0);
+					$player->getInventory()->equipItem(1);
+					$player->getInventory()->equipItem(2);
+					$player->getInventory()->equipItem(3);
+					$player->getInventory()->equipItem(4);
 				}
 			}
 		}
@@ -462,7 +479,11 @@ class Main extends PluginBase implements Listener{
 					$player->getInventory()->setBoots(Item::get(305, 0, 1));
 					$player->getInventory()->sendArmorContents($player);
 					$player->teleport(new Vector3(1719, 9, -1027));
-					$player->getInventory()->setHotbarSlotIndex(0, 1, 2, 3, 4);//TODO
+					$player->getInventory()->equipItem(0);
+					$player->getInventory()->equipItem(1);
+					$player->getInventory()->equipItem(2);
+					$player->getInventory()->equipItem(3);
+					$player->getInventory()->equipItem(4);
 				}
 			}
 		}
@@ -493,7 +514,11 @@ class Main extends PluginBase implements Listener{
 					$player->getInventory()->setBoots(Item::get(313, 0, 1));
 					$player->getInventory()->sendArmorContents($player);
 					$player->teleport(new Vector3(1719, 9, -1027));
-					$player->getInventory()->setHotbarSlotIndex(0, 1, 2, 3, 4);//TODO
+					$player->getInventory()->equipItem(0);
+					$player->getInventory()->equipItem(1);
+					$player->getInventory()->equipItem(2);
+					$player->getInventory()->equipItem(3);
+					$player->getInventory()->equipItem(4);
 				}
 			}
 		}
@@ -524,7 +549,11 @@ class Main extends PluginBase implements Listener{
 					$player->getInventory()->setBoots(Item::get(313, 0, 1));
 					$player->getInventory()->sendArmorContents($player);
 					$player->teleport(new Vector3(1719, 9, -1027));
-					$player->getInventory()->setHotbarSlotIndex(0, 1, 2, 3, 4);//TODO
+					$player->getInventory()->equipItem(0);
+					$player->getInventory()->equipItem(1);
+					$player->getInventory()->equipItem(2);
+					$player->getInventory()->equipItem(3);
+					$player->getInventory()->equipItem(4);
 				}
 			}
 		}
