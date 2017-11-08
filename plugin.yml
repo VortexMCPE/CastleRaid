@@ -1,7 +1,23 @@
 name: CRcore
-author: QuiverlyRivalry
-api:
+author: QuiverlyRivalry/Epicsteve33/Jason
+api: 
  - 3.0.0-ALPHA9
 version: 0.1
 main: CRcore\Main
 load: STARTUP
+commands:
+ help:
+  usage: /help or /?
+  description: Help Command
+ hub:
+  usage: /hub
+  description: Main Hub Command
+ flyon:
+  usage: Admins Only
+  description: Admins Only
+ flyoff:
+  usage: Admins Only
+  description: Admins Only
+ heal:
+  usage: Admins Only
+  description: Admins Only
