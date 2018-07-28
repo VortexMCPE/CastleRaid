@@ -1,7 +1,7 @@
 name: CRcore
 author: QuiverlyRivalry/Epicsteve33/Jason
 api: 
- - 3.0.0-ALPHA9
+ - 4.0.0
 version: 0.1
 main: CRcore\Main
 load: STARTUP
