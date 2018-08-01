@@ -1,13 +1,13 @@
 ---
-Dev_Mode: false
-Server-Name-Dev: CR
-Server-Name: CR
-Hub-Command: §bGoing Back to Hub..
-Unknown-Command: §cUnknown command. Try /help for a list of commands
-max-caps: 3
-interval: 10
-item1: 111
-item2: 111
-item3: 111
-item4: 111
+Dev_Mode: true
+Server-Name-Dev: §c§lVortexMCPE
+Server-Name: §c§lVortexMCPE
+Hub-Command: §c§lVortexMCPE Teleporting...
+Unknown-Command: §c§lVortexMCPE Unknown Command
+max-caps: 800
+interval: 60
+item1: 0
+item2: 0
+item3: 0
+item4: 0
 ...
